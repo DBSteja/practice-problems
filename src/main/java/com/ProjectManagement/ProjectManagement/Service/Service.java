@@ -1,4 +1,4 @@
-package com.ProjectManagement.ProjectManagement.service;
+package com.ProjectManagement.ProjectManagement.Service;
 
 import com.ProjectManagement.ProjectManagement.entity.TestEntity;
 import com.ProjectManagement.ProjectManagement.model.TestModel;
