@@ -17,7 +17,6 @@ public class EnvironmentController {
     @Autowired
     private ProService proService;
 
-
     @GetMapping("/test")
     public ResponseEntity<List<TestModel>> getTestData(){
         return new ResponseEntity<>(testservice.getTestDetails(), HttpStatus.OK);

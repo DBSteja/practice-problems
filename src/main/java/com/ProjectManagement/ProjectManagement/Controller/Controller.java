@@ -1,6 +1,7 @@
 package com.ProjectManagement.ProjectManagement.Controller;
 
 import com.ProjectManagement.ProjectManagement.Service.Service;
+import com.ProjectManagement.ProjectManagement.entity.Entity;
 import com.ProjectManagement.ProjectManagement.entity.FormEntity;
 import com.ProjectManagement.ProjectManagement.model.FormDTO;
 import com.ProjectManagement.ProjectManagement.model.Model;
@@ -40,4 +41,12 @@ public class Controller {
 
         return new ResponseEntity<>(service.getProjectByEnv(title),HttpStatus.OK);
     }
+
+    @PutMapping("/edit/{title}")
+    public ResponseEntity<String> updateService(@RequestBody Model model,@PathVariable String title){
+
+        return new ResponseEntity<>(service.updateService(model,title),HttpStatus.OK);
+    }
+
+
 }
