@@ -9,11 +9,13 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.lang.reflect.Array;
 import java.util.List;
 
 @RestController
 public class Controller {
+
+    @Autowired
+    private Service service;
 
 
     @GetMapping("/get")
@@ -21,4 +23,21 @@ public class Controller {
         return "Hello World : ";
     }
 
+    @PostMapping("/home")
+    public ResponseEntity<String>  addProject(@RequestBody FormDTO form){
+
+        return new ResponseEntity<>(service.addProject(form),HttpStatus.OK);
+    }
+
+    @GetMapping("/home")
+    public ResponseEntity<List<FormDTO>> getProject(){
+
+        return new ResponseEntity<>(service.getProject(),HttpStatus.OK);
+    }
+
+    @GetMapping("home/{title}")
+    public ResponseEntity<List<FormDTO>> getProject(@PathVariable String title){
+
+        return new ResponseEntity<>(service.getProjectByEnv(title),HttpStatus.OK);
+    }
 }
