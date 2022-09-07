@@ -17,8 +17,8 @@ public class TestEntity {
     private Long id;
     @Column(name ="title")
     private String title;
-    @Column(name = "release_Data")
-    private Date releaseData;
+    @Column(name = "release_Date")
+    private Date releaseDate;
     @Column(name = "status")
     private String status;
     @Column(name = "environment")
