@@ -1,3 +1,4 @@
+
 package com.ProjectManagement.ProjectManagement.entity;
 
 import lombok.Data;
@@ -27,6 +28,3 @@ public class Entity {
 
 
 }
-
-
-

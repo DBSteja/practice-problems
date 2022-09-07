@@ -37,63 +37,9 @@ public class ServiceImpl implements Service {
             entity.setEnvironment(model.getEnvironment());
 
             repo.save(entity);
+import com.ProjectManagement.ProjectManagement.repository.Repo;
+import org.springframework.beans.factory.annotation.Autowired;
 
-        return result;
-    }
+public class ServiceImpl {
 
-    @Override
-    public String addProject(FormDTO form) {
-
-        String res="successfull";
-
-        if(form==null)
-        {
-            System.out.println("form is cant be empty");
-        }
-
-        FormEntity entity=new FormEntity();
-
-        entity.setDate(form.getDate());
-        entity.setTitle(form.getTitle());
-        entity.setStatus(form.getStatus());
-        entity.setDescription(form.getDescription());
-        entity.setEnvironment(form.getEnvironment());
-
-          entity=repo1.save(entity);
-          if(entity==null)
-          {
-              res="not successfull";
-          }
-          return res;
-    }
-
-    @Override
-    public List<FormDTO> getProject() {
-
-        List<FormDTO> list=new LinkedList<>();
-
-        Iterable<FormEntity> form=repo1.findAll();
-      // form.forEach(e-> System.out.println(e.getDescription()));
-
-        form.forEach(e -> list.add(new FormDTO(e))
-        );
-
-        return list;
-    }
-
-    @Override
-    public List<FormDTO> getProjectByEnv(String title) {
-
-        List<FormDTO> list=new LinkedList<>();
-
-        Iterable<FormEntity> form=repo1.findAll();
-
-        form.forEach(e->{
-            if (e.getEnvironment().equalsIgnoreCase(title))
-             {
-                list.add(new FormDTO(e));
-            }}
-        );
-        return list;
-    }
 }
