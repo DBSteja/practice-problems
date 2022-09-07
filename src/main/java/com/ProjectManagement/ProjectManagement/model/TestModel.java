@@ -8,8 +8,9 @@ import java.util.Date;
 @Data
 @Configuration
 public class TestModel {
-private Long id;
-private  String title;
-private Date releaseData;
-private String environment;
+    private Long id;
+    private  String title;
+    private Date releaseData;
+    private String status;
+    private String environment;
 }

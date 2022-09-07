@@ -27,6 +27,7 @@ public class TestService {
             testModel.setTitle(testEntity.getTitle());
             testModel.setReleaseData(testEntity.getReleaseData());
             testModel.setEnvironment(testEntity.getEnvironment());
+            testModel.setStatus(testEntity.getStatus());
         }
     }
 

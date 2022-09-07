@@ -10,7 +10,7 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table(name="Test")
+@Table(name="test")
 public class TestEntity {
     @Id
     @Column(name = "id", nullable = false)
@@ -19,6 +19,8 @@ public class TestEntity {
     private String title;
     @Column(name = "release_Data")
     private Date releaseData;
+    @Column(name = "status")
+    private String status;
     @Column(name = "environment")
     private String environment;
 

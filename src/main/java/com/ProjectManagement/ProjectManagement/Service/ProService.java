@@ -26,5 +26,6 @@ public class ProService {
         proModel.setTitle(proEntity.getTitle());
         proModel.setReleaseData(proEntity.getReleaseData());
         proModel.setEnvironment(proEntity.getEnvironment());
+        proModel.setStatus(proEntity.getStatus());
     }
 }

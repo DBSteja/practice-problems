@@ -17,6 +17,8 @@ public class ProEntity {
     private String title;
     @Column(name = "release_Data")
     private Date releaseData;
+    @Column(name = "status")
+    private String status;
     @Column(name = "environment")
     private String environment;
 
