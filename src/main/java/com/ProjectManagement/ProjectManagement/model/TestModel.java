@@ -10,7 +10,7 @@ import java.util.Date;
 public class TestModel {
     private Long id;
     private  String title;
-    private Date releaseData;
+    private Date releaseDate;
     private String status;
     private String environment;
 }

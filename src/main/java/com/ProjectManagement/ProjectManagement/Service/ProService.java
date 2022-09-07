@@ -24,7 +24,7 @@ public class ProService {
     private void MapModelToBillingStatusEntity(ProEntity proEntity, ProModel proModel) {
         proModel.setId(proEntity.getId());
         proModel.setTitle(proEntity.getTitle());
-        proModel.setReleaseData(proEntity.getReleaseData());
+        proModel.setReleaseDate(proEntity.getReleaseDate());
         proModel.setEnvironment(proEntity.getEnvironment());
         proModel.setStatus(proEntity.getStatus());
     }

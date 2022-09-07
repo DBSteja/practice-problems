@@ -25,7 +25,7 @@ public class TestService {
         private void MapModelToBillingStatusEntity(TestEntity testEntity, TestModel testModel) {
             testModel.setId(testEntity.getId());
             testModel.setTitle(testEntity.getTitle());
-            testModel.setReleaseData(testEntity.getReleaseData());
+            testModel.setReleaseDate(testEntity.getReleaseDate());
             testModel.setEnvironment(testEntity.getEnvironment());
             testModel.setStatus(testEntity.getStatus());
         }
