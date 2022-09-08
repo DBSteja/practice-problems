@@ -10,7 +10,7 @@ import java.util.List;
 @org.springframework.stereotype.Service
 public interface Service {
 
-    public String updateService(Model model,String title);
+    public List<String> updateService(Model model,String title);
 
     String addProject(FormDTO form);
 

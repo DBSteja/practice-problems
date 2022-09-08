@@ -43,7 +43,7 @@ public class Controller {
     }
 
     @PutMapping("/edit/{title}")
-    public ResponseEntity<String> updateService(@RequestBody Model model,@PathVariable String title){
+    public ResponseEntity<List<String>> updateService(@RequestBody Model model,@PathVariable String title){
 
         return new ResponseEntity<>(service.updateService(model,title),HttpStatus.OK);
     }

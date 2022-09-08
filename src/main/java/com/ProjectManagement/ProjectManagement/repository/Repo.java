@@ -8,8 +8,4 @@ import org.springframework.stereotype.Repository;
 public interface Repo extends CrudRepository<Entity,String> {
 
     Entity findByTitle(String title);
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface Repo {
 }

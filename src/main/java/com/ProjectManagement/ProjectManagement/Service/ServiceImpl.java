@@ -8,6 +8,7 @@ import com.ProjectManagement.ProjectManagement.repository.FormRepo;
 import com.ProjectManagement.ProjectManagement.repository.Repo;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -22,7 +23,9 @@ public class ServiceImpl implements Service {
     private FormRepo repo1;
 
     @Override
-    public String updateService(Model model,String title) {
+    public List<String> updateService(Model model,String title) {
+
+        List<String> list=new LinkedList<>();
 
         String result = "updated successfully";
         if (model == null) {
@@ -38,7 +41,7 @@ public class ServiceImpl implements Service {
 
             repo.save(entity);
 
-        return result;
+        return list;
     }
 
     @Override
