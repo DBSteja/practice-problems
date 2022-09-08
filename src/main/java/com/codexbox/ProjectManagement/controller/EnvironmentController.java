@@ -24,16 +24,16 @@ public class EnvironmentController {
     private PreService preService;
 
 
-    @GetMapping("/test")
+    @GetMapping("/test1")
     public ResponseEntity<List<TestModel>> getTestData(){
         return new ResponseEntity<>(testservice.getTestDetails(), HttpStatus.OK);
     }
-    @GetMapping("/pro")
+    @GetMapping("/pro1")
     public ResponseEntity<List<ProModel>> getProData(){
         return new ResponseEntity<>(proService.getproDetails(), HttpStatus.OK);
     }
 
-    @GetMapping("/pre")
+    @GetMapping("/pre1")
     public ResponseEntity<List<PreModel>> getPreData(){
         return new ResponseEntity<>(preService.getpreDetails(), HttpStatus.OK);
     }

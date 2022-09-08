@@ -16,12 +16,6 @@ public class HomeController {
     @Autowired
     private EnvyService envyService;
 
-    @GetMapping("/get")
-    public String get(){
-        return "Hello World : ";
-    }
-
-
     @GetMapping("/environmentDropDown")
     public ResponseEntity<List<EnvyDropDownDTO>>getEnvyDropDown(){
         return new ResponseEntity<>(envyService.getEnvironmentDropDown(), HttpStatus.OK);

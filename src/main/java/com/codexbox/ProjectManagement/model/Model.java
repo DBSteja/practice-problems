@@ -1,4 +1,4 @@
-package com.ProjectManagement.ProjectManagement.model;
+package com.codexbox.ProjectManagement.model;
 
 import lombok.Data;
 

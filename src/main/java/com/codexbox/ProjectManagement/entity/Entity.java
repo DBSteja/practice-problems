@@ -1,5 +1,5 @@
 
-package com.ProjectManagement.ProjectManagement.entity;
+package com.codexbox.ProjectManagement.entity;
 
 import lombok.Data;
 
